@@ -1,0 +1,58 @@
+# =========================
+# LangChain stack (PIN theo môi trường bạn đã chạy OK)
+# =========================
+langchain==0.3.27
+langchain-core==0.3.80
+langchain-community==0.3.31
+langchain-text-splitters==0.3.11
+langchain-openai==0.3.35
+openai>=1.0.0
+
+# (Tắt DeepSeek để tránh kéo langchain-core>=1.0.0 gây xung đột)
+# langchain-community[deepseek]>=0.0.20
+# langchain-deepseek>=0.0.1
+
+# =========================
+# Runtime deps (recon/planning dùng trực tiếp)
+# =========================
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+PyYAML>=6.0
+requests>=2.31.0
+
+# =========================
+# Các lib bạn đã liệt kê
+# =========================
+bs4==0.0.2
+deep-translator==1.11.4
+docx2txt==0.8
+EbookLib==0.18
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+GitPython==3.1.43
+googlesearch-python>=1.3.0
+httptools==0.6.4
+inscriptis==2.5.0
+ipykernel==6.29.5
+langdetect==1.0.9
+
+# =========================
+# LlamaIndex (PIN đúng version bạn đang chạy OK)
+# =========================
+llama-index==0.12.52
+llama-index-llms-openai>=0.3.18
+llama-index-llms-langchain==0.6.0
+llama-index-llms-huggingface==0.4.0
+llama-index-llms-huggingface-api==0.3.0
+llama-index-readers-web==0.3.0
+llamaindex-py-client==0.1.19
+
+# =========================
+# Các lib còn lại
+# =========================
+lxml_html_clean==0.4.1
+pip-tools==7.4.1
+pipreqs==0.5.0
+readability-lxml==0.8.1
+scikit-learn==1.5.2
+seaborn==0.13.2
+spacy==3.8.2
